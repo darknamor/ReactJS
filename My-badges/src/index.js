@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'; //analogo a create element
+import ReactDOM from 'react-dom'; //analogo a apend child
 
 const container = document.getElementById('app');
 
