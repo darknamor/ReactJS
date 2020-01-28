@@ -20,7 +20,7 @@ class BadgeNew extends React.Component {
               <Badge
                 firstName='Nicolás'
                 lastName='Miranda'
-                avatarURL='https://es.gravatar.com/userimage/28968053/02e629a3077930841ed5341e32666afe?size=200'
+                avatarURL='https://media-exp1.licdn.com/dms/image/C4E03AQFH1fmffAtRmg/profile-displayphoto-shrink_200_200/0?e=1585785600&v=beta&t=GVj3TCsS2cl7xgwA89QTcdB2HXGgyetVFWWnTeg_bug'
                 jobTitle='Full Stack Development'
                 twitter='@darknamor'></Badge>
             </div>
