@@ -1,5 +1,5 @@
 import React from 'react';
-import './Styles/Badge.css';
+import './styles/Badge.css';
 import img1 from '../images/idea.svg';
 import img2 from '../images/coding.svg';
 import img3 from '../images/product.svg';
