@@ -1,3 +1,6 @@
 npm install -g create-react-app //crea un proyecto en react
 create-react-app -nombre del proyecto-
 npm run start //inicia el proyecto
+npm install //al clonar un proyecto hay que reinstalar las dependencias ignoradas en el git ignore
+7.	OUD –Credential Management
++
