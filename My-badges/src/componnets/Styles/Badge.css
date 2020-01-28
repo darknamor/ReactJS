@@ -8,12 +8,15 @@
 
 .Badge__header {
   padding: 0.5rem 0;
+ 
   height: 80px;
   background: #1b1b25;
   display: flex;
   justify-content: center;
 }
-
+.Badge__header>img{
+  width: 10rem;
+}
 .Badge__section-name {
   display: flex;
   justify-content: center;
