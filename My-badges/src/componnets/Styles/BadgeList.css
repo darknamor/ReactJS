@@ -1,0 +1,26 @@
+.BadgesList ul > li {
+  margin-bottom: 1rem;
+}
+
+.BadgesListItem {
+  background: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);
+  border-radius: 5px;
+  display: flex;
+  padding: 1rem;
+}
+
+.BadgesListItem__avatar {
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  width: 80px;
+  height: 80px;
+}
+.Twitter__logo {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url('../../images/Twitter.svg');
+  margin-right: 0.3rem;
+  vertical-align: middle;
+}
