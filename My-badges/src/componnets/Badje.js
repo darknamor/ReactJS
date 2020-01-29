@@ -20,8 +20,8 @@ class Badge extends React.Component {
           </h1>
         </div>
         <div className='Badge__section-info'>
-          <h3>Full Stack Development</h3>
-          <div>@darknamor</div>
+          <h3>{this.props.jobTitle}</h3>
+          <div>@{this.props.twitter}</div>
         </div>
         <div className='Badge__footer'>#React</div>
       </div>
