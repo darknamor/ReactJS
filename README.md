@@ -56,7 +56,7 @@ Multi Page Apps: Cada página implica una petición al servidor. La respuesta us
 
 Single Page Apps (SPA): Aplicaciones que cargan una sola página de HTML y cualquier actualización la hacen re-escribiendo el HTML que ya tenían.
 
-React Router (v4): Nos da las herramientas para poder hacer SPA fácilmente. Usaremos 4 componentes:
+React Router (v4): Nos da las herramientas para poder hacer SPA fácilmente:
 
 - BrowserRouter: es un componente que debe estar siempre lo más arriba de la aplicación. Todo lo que esté adentro funcionará como una SPA.
 - Route: Cuando hay un match con el path, se hace render del component. El component va a recibir tres props: match, history, location.
