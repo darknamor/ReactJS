@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Layaout>
         <Switch>
-          <Route exact path='/home' component={Home} />
+          <Route exact path='/' component={Home} />
           <Route exact path='/badges' component={Badges} />
           <Route exact path='/Badges/new' component={BadgeNew} />
           <Route component={NotFound} />
