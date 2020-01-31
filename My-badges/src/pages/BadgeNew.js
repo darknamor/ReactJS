@@ -3,7 +3,6 @@ import React from 'react';
 import './styles/BadgeNew.css';
 import header from '../images/astronauta.svg';
 import right from '../images/ovni.svg';
-import Navbar from '../componnets/Navbar';
 import Badge from '../componnets/Badje';
 import BadgeForm from '../componnets/BadgeForm';
 
@@ -34,8 +33,7 @@ class BadgeNew extends React.Component {
   };
   render() {
     return (
-      <div>
-        <Navbar />
+      <React.Fragment>
         <div className='BadgeNew__hero'>
           <img className='img-fluid' title='img1' width='90px' src={header} alt='Logo'></img>
           <img className='img-fluid right' width='90px' src={right} alt='Logo'></img>
@@ -61,7 +59,7 @@ class BadgeNew extends React.Component {
             </div>
           </div>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
