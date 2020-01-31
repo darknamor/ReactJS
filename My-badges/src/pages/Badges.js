@@ -1,13 +1,13 @@
 import React from 'react';
 import './styles/Badges.css';
 
-import Navbar from '../componnets/Navbar';
 import BadgesList from '../componnets/BadgesList';
 import left from '../images/astronauta.svg';
 import right from '../images/ovni.svg';
 import avatar1 from '../images/avatar1.svg';
 import avatar2 from '../images/avatar2.svg';
 import avatar3 from '../images/avatar3.svg';
+import { Link } from 'react-router-dom';
 class Badges extends React.Component {
   state = {
     data: [
@@ -42,8 +42,7 @@ class Badges extends React.Component {
   };
   render() {
     return (
-      <div>
-        <Navbar />
+      <React.Fragment>
         <div className='Badges'>
           <div className='Badges__hero'>
             <div className='Badges__container'>
@@ -54,9 +53,9 @@ class Badges extends React.Component {
         </div>
         <div className='Badges__container'>
           <div className='Badges__buttons'>
-            <a href='/badges/new' className='btn btn-primary'>
+            <Link to='/badges/new' className='btn btn-primary'>
               New Badge
-            </a>
+            </Link>
           </div>
           <div className='BadgesList'>
             <div className='Badges__container'>
@@ -64,7 +63,7 @@ class Badges extends React.Component {
             </div>
           </div>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }

@@ -3,4 +3,4 @@ create-react-app -nombre del proyecto-
 npm run start //inicia el proyecto
 npm install //al clonar un proyecto hay que reinstalar las dependencias ignoradas en el git ignore
 7.	OUD –Credential Management
-+
+npm install react-router-doom
