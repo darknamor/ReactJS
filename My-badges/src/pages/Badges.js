@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/Badges.css';
 
-import BadgesList from '../componnets/BadgesList';
+import BadgesList from '../components/BadgesList';
 import left from '../images/astronauta.svg';
 import right from '../images/ovni.svg';
 import avatar1 from '../images/avatar1.svg';

@@ -2,7 +2,7 @@ import React from 'react'; //analogo a create element
 import ReactDOM from 'react-dom'; //analogo a apend child
 
 
-import App from './componnets/App';
+import App from './components/App';
 
 import './global.css';
 import 'bootstrap/dist/css/bootstrap.css';

@@ -3,8 +3,8 @@ import React from 'react';
 import './styles/BadgeNew.css';
 import header from '../images/astronauta.svg';
 import right from '../images/ovni.svg';
-import Badge from '../componnets/Badje';
-import BadgeForm from '../componnets/BadgeForm';
+import Badge from '../components/Badje';
+import BadgeForm from '../components/BadgeForm';
 
 class BadgeNew extends React.Component {
   state = {
