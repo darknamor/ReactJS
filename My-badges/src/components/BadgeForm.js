@@ -41,7 +41,7 @@ class BadgeForm extends React.Component {
             <label>Twitter</label>
             <input onChange={this.props.onChange} className='form-control' type='text' name='twitter' value={this.props.formValues.twitter} />
           </div>
-          <button onClick={this.handleClick} className='btn btn-primary'>
+          <button onClick={this.props.onSubmit} className='btn btn-primary'>
             Save
           </button>
         </form>

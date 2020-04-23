@@ -1,9 +1,13 @@
-import React from 'react';
-import './styles/Badge.css';
-import img1 from '../images/idea.svg';
-import img2 from '../images/coding.svg';
-import img3 from '../images/product.svg';
-import 'bootstrap/dist/css/bootstrap.css';
+import React from "react";
+
+import "./styles/Badge.css";
+import img1 from "../images/idea.svg";
+import img2 from "../images/coding.svg";
+import img3 from "../images/product.svg";
+
+import "bootstrap/dist/css/bootstrap.css";
+import Gravatar from "./Gravatar.js";
+
 class Badge extends React.Component {
   render() {
     return (
@@ -14,10 +18,7 @@ class Badge extends React.Component {
           <img src={img3} alt='Logo'></img>
         </div>
         <div className='Badge__section-name'>
-          <img className='Badge__avatar' src={this.props.avatarURL} alt='Avatar'></img>
-          <h1>
-            {this.props.firstName} <br /> {this.props.lastName}
-          </h1>
+          <Gravatar className='Badge__avatar' email={this.props.email} alt='Avatar' />
         </div>
         <div className='Badge__section-info'>
           <h3>{this.props.jobTitle}</h3>
