@@ -2,6 +2,8 @@ import React from "react";
 import "./styles/Badges.css";
 
 import BadgesList from "../components/BadgesList";
+import PageLoading from "../components/PageLoading";
+import PageError from "../components/PageError";
 import left from "../images/astronauta.svg";
 import right from "../images/ovni.svg";
 import { Link } from "react-router-dom";
@@ -11,7 +13,7 @@ class Badges extends React.Component {
   state = {
     loading: true,
     error: null,
-    data: undefined
+    data: undefined,
   };
   componentDidMount() {
     this.fetchData();
@@ -28,10 +30,11 @@ class Badges extends React.Component {
   };
   render() {
     if (this.state.loading === true) {
-      return "Loading...";
+      return <PageLoading />;
     }
     if (this.state.error) {
-      return `'Error: ${this.state.error.message}'`;
+      //return `'Error: ${this.state.error.message}'`;
+      return <PageError error={this.state.error} />;
     }
     return (
       <React.Fragment>
