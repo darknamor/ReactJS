@@ -1,24 +1,24 @@
-import React from "react";
+import React from 'react';
 
-import "./styles/BadgeNew.css";
-import header from "../images/astronauta.svg";
-import right from "../images/ovni.svg";
-import Badge from "../components/Badje";
+import './styles/BadgeNew.css';
+import header from '../images/astronauta.svg';
+import right from '../images/ovni.svg';
+import Badge from '../components/Badje';
 
-import BadgeForm from "../components/BadgeForm";
-import api from "../api.js";
-import md5 from "md5";
-import PageLoading from "../components/PageLoading";
+import BadgeForm from '../components/BadgeForm';
+import api from '../api.js';
+import md5 from 'md5';
+import PageLoading from '../components/PageLoading';
 class BadgeNew extends React.Component {
   state = {
     loading: false,
     error: null,
     form: {
-      firstName: "",
-      lastName: "",
-      email: "",
-      jobTitle: "",
-      twitter: "",
+      firstName: '',
+      lastName: '',
+      email: '',
+      jobTitle: '',
+      twitter: '',
     },
   };
   handleChange = (e) => {
@@ -73,15 +73,15 @@ class BadgeNew extends React.Component {
                 jobTitle='Full Stack Development'
                 twitter='@darknamor' */}
               <Badge
-                firstName={this.state.form.firstName || "FIRST_NAME"}
-                lastName={this.state.form.lastName || "LAST_NAME"}
-                jobTitle={this.state.form.jobTitle || "JOB_TITLE"}
-                twitter={this.state.form.twitter || "TWITTER"}
-                email={this.state.form.email || "EMAIL"}
-                avatarURL='https://media-exp1.licdn.com/dms/image/C4E03AQFH1fmffAtRmg/profile-displayphoto-shrink_200_200/0?e=1593043200&v=beta&t=rpSMrqCho7u1DHCCD61pww60J7NTObn2KgnOwxnhqTE'
-              ></Badge>
+                firstName={this.state.form.firstName || 'FIRST_NAME'}
+                lastName={this.state.form.lastName || 'LAST_NAME'}
+                jobTitle={this.state.form.jobTitle || 'JOB_TITLE'}
+                twitter={this.state.form.twitter || 'TWITTER'}
+                email={this.state.form.email || 'EMAIL'}
+                avatarURL='https://media-exp1.licdn.com/dms/image/C4E03AQFH1fmffAtRmg/profile-displayphoto-shrink_200_200/0?e=1593043200&v=beta&t=rpSMrqCho7u1DHCCD61pww60J7NTObn2KgnOwxnhqTE'></Badge>
             </div>
             <div className='col-6'>
+              <h1>New Attendant</h1>
               <BadgeForm onChange={this.handleChange} onSubmit={this.handleSubmit} formValues={this.state.form} error={this.state.error} />
             </div>
           </div>
