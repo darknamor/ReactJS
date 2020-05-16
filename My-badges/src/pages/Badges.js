@@ -1,14 +1,15 @@
-import React from "react";
-import "./styles/Badges.css";
+import React from 'react';
+import './styles/Badges.css';
 
-import BadgesList from "../components/BadgesList";
-import PageLoading from "../components/PageLoading";
-import PageError from "../components/PageError";
-import left from "../images/astronauta.svg";
-import right from "../images/ovni.svg";
-import { Link } from "react-router-dom";
+import BadgesList from '../components/BadgesList';
+import PageLoading from '../components/PageLoading';
+import PageError from '../components/PageError';
+import left from '../images/astronauta.svg';
 
-import api from "../api";
+import right from '../images/ovni.svg';
+import { Link } from 'react-router-dom';
+import MiniLoader from '../components/MiniLoader';
+import api from '../api';
 class Badges extends React.Component {
   state = {
     loading: true,
@@ -17,6 +18,10 @@ class Badges extends React.Component {
   };
   componentDidMount() {
     this.fetchData();
+    this.intervalId = setInterval(this.fetchData, 5000);
+  }
+  componentWillUnmount(){
+    clearInterval(this.intervalId);
   }
   fetchData = async () => {
     this.setState({ loading: true, error: null });
@@ -29,7 +34,7 @@ class Badges extends React.Component {
     }
   };
   render() {
-    if (this.state.loading === true) {
+    if (this.state.loading === true && !this.state.data) {
       return <PageLoading />;
     }
     if (this.state.error) {
@@ -55,6 +60,7 @@ class Badges extends React.Component {
           <div className='BadgesList'>
             <div className='Badges__container'>
               <BadgesList badges={this.state.data} />
+              {this.state.loading && <MiniLoader />}
             </div>
           </div>
         </div>
